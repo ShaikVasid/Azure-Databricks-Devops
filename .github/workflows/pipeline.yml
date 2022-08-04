@@ -27,6 +27,7 @@ name: Databricks-CI-CD
 
 # Manual trigger with parameters
 on:
+ pull_request:
   workflow_dispatch:
     inputs:
       # This is the path of your notebooks in Git.  Currently, this is not recursively deploying notebooks
